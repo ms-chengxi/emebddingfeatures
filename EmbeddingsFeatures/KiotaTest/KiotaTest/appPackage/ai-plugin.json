@@ -1,0 +1,36 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/copilot/plugin/v2.1/schema.json",
+    "schema_version": "v2.1",
+    "name_for_human": "LogicAppEmbeddingFunction",
+    "description_for_human": "Import from \"LogicAppEmbeddingFunction\" Function App",
+    "description_for_model": "Import from \"LogicAppEmbeddingFunction\" Function App",
+    "contact_email": "publisher-email@example.com",
+    "namespace": "LogicAppEmbeddingFunction",
+    "capabilities": {
+        "conversation_starters": [
+            {
+                "text": "EmbeddingFunction"
+            }
+        ]
+    },
+    "functions": [
+        {
+            "name": "embeddingfunction",
+            "description": "EmbeddingFunction"
+        }
+    ],
+    "runtimes": [
+        {
+            "type": "OpenApi",
+            "auth": {
+                "type": "None"
+            },
+            "spec": {
+                "url": "apiSpecificationFile/openapi.yaml"
+            },
+            "run_for_functions": [
+                "embeddingfunction"
+            ]
+        }
+    ]
+}

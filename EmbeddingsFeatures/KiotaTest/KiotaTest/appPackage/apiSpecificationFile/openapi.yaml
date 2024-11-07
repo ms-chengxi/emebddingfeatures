@@ -1,0 +1,16 @@
+openapi: 3.0.1
+info:
+  title: LogicAppEmbeddingFunction - Subset
+  description: Import from "LogicAppEmbeddingFunction" Function App
+  version: '1.0'
+servers:
+  - url: >-
+      https://logicappembeddingfunction-apim.azure-api.net/LogicAppEmbeddingFunction
+paths:
+  /EmbeddingFunction:
+    post:
+      summary: EmbeddingFunction
+      operationId: embeddingfunction
+      responses:
+        '200':
+          description: response
